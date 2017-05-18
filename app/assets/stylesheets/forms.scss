@@ -1,22 +1,54 @@
-#formsBody {
-  background-image: url('assets/slideImg1.jpg');
-  background-color: skyblue;
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {
+
+  #formsBody {
+    background-image: url(/assets/form400.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .formModal {
+    position: absolute;
+    margin: auto;
+    top: 60px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    width: 300px;
+    height: 300px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 15px;
+
+    -webkit-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+    -moz-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+    box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+  }
+
 }
 
-.formModal {
-  position: absolute;
-  margin: auto;
-  top: 60px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  width: 300px;
-  height: 300px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 15px;
+/* Larger than phablet */
 
-  -webkit-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
-  -moz-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
-  box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than desktop HD*/
+
+@media (min-width: 1200px) {
+
 }

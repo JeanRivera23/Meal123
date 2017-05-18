@@ -1,0 +1,22 @@
+#formsBody {
+  background-image: url('assets/slideImg1.jpg');
+  background-color: skyblue;
+}
+
+.formModal {
+  position: absolute;
+  margin: auto;
+  top: 60px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 15px;
+
+  -webkit-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+  -moz-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+  box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+}

@@ -1,8 +1,15 @@
+<!-- login button -->
+<%= form_tag(new_user_session_path, :method => :get) do %>
+  <%= submit_tag "Login", class: "btn", id: "hb1"%>
+<% end %>
+
+
+<!-- carousel -->
 <div class="carousel">
   <ul id="slides">
-    <li class="slide1"><%= image_tag("/assets/slideImg1.jpg", class: "img1") %></li>
-    <li class="slide"></li>
-    <li class="slide"></li>
+    <li class="slide showing"><%= image_tag("/assets/slideImg1.jpg", class: "img1") %></li>
+    <li class="slide"><%= image_tag("/assets/slideImg2.jpg", class: "img2") %></li>
+    <li class="slide"><%= image_tag("/assets/slideImg3.jpg", class: "img3") %></li>
   </ul>
 </div>
 

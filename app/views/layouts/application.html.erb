@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Meal 123</title>
+    <title>Meal123</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -38,10 +38,6 @@
 
             <%= link_to "Logout", destroy_user_session_path, method: :delete, :class => 'navbar-link'  %>
 
-        <% else %>
-            <%= form_tag(new_user_session_path, :method => :get) do %>
-              <%= submit_tag "Login", class: "btn", id: "hb1"%>
-            <% end %>
         <% end %>
 
       </nav>

@@ -35,7 +35,7 @@
   border-radius: 8px;
   border: 1px solid #eb8e5e;
   font-size: 15px;
-  text-shadow: 1px 1px #706f70;
+  text-shadow: 1px 1px #ABABAB;
   letter-spacing: .05em;
   -webkit-box-shadow: 1px 2px 5px -1px #706f70;
   -moz-box-shadow: 1px 2px 5px -1px #706f70;
@@ -43,8 +43,8 @@
 }
 
 .btn:hover {
-  background-color: #fecda5;
-  border: 1px solid #fecda5;
+  background-color: #fd8040;
+  border: 1px solid #eb8e5e;
 }
 
 .logo {
@@ -79,13 +79,6 @@
    .logo {
      position: relative;
      top: -4px;
-   }
-
-   /*login button*/
-   #hb1 {
-     position: relative;
-     top: -65px;
-     left: 63%;
    }
  }
 

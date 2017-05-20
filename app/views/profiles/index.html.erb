@@ -1,0 +1,139 @@
+<!-- profile nav -->
+<nav>
+
+    <div class="logo">
+      <a href="/"><h1>MEAL<span id="logoSpan">123</span></h1></a>
+    </div>
+
+    <div class="profileNav">
+
+      <% if user_signed_in? %>
+
+              <a href="/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
+
+              <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+
+              <a href="/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+
+      <% end %>
+    </div>
+</nav>
+
+<!-- weekly calendar  -->
+<div class="calendar">
+
+      <div class="sunday">
+          <p class="day">SU</p>
+          <p class="date">14</p>
+      </div>
+
+      <div class="monday">
+          <p class="day">MO</p>
+          <p class="date">15</p>
+      </div>
+
+      <div class="tuesday">
+          <p class="day">TU</p>
+          <p class="date">16</p>
+      </div>
+
+      <div class="wednesday">
+          <p class="day">WE</p>
+          <p class="date">17</p>
+      </div>
+
+      <div class="thursday">
+          <p class="day">TH</p>
+          <p class="date">18</p>
+      </div>
+
+      <div class="friday">
+          <p class="day">FR</p>
+          <p class="date">19</p>
+      </div>
+
+      <div class="saturday">
+          <p class="day">SA</p>
+          <p class="date">20</p>
+      </div>
+
+</div>
+
+
+<!-- recipe container -->
+<div class="profileRecipes">
+
+    <!-- breakfast -->
+    <div class="recipeContainer">
+
+
+        <div class="recipeImgContainer" id="breakfast">
+
+        </div>
+
+          <div class="recipeContent">
+
+            <p class="recipeH2">Breakfast</p>
+
+            <h5 class="recipeP"><a href="#" class="profileA">Blueberry Oatmeal</a></h5>
+
+          </div>
+
+    </div>
+
+
+    <!-- Lunch -->
+    <div class="recipeContainer">
+
+        <div class="recipeImgContainer" id="lunch">
+
+        </div>
+
+        <div class="recipeContent">
+
+          <p class="recipeH2">Lunch</p>
+
+          <h5 class="recipeP"><a href="#" class="profileA">Egg Salad Sandwich</a></h5>
+
+        </div>
+
+    </div>
+
+
+    <!-- dinner -->
+    <div class="recipeContainer">
+
+        <div class="recipeImgContainer" id="dinner">
+
+        </div>
+
+        <div class="recipeContent">
+
+          <p class="recipeH2">Dinner</p>
+
+          <h5 class="recipeP"><a href="#" class="profileA">Grilled Steak</a></h5>
+
+        </div>
+
+    </div>
+
+
+    <!-- dessert -->
+    <div class="recipeContainer">
+
+        <div class="recipeImgContainer" id="dessert">
+
+        </div>
+
+        <div class="recipeContent">
+
+          <p class="recipeH2">This Week's Dessert</p>
+
+          <h5 class="recipeP"><a href="#" class="profileA">Raspberry Key Lime Squares</a></h5>
+
+
+        </div>
+
+    </div>
+
+</div>

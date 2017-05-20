@@ -1,0 +1,48 @@
+// Place all the styles related to the settings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@media (min-width: 400px) {
+
+  .settingNav {
+    position: fixed;
+    top: 18px;
+    right: 1%;
+  }
+
+  .settingNav img {
+    width: 23px;
+    height: 23px;
+    margin-right: 10px;
+  }
+
+  .settingNav img:hover {
+    opacity: .5;
+  }
+
+}
+
+
+/* Larger than phablet */
+
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than desktop HD*/
+
+@media (min-width: 1200px) {
+
+}

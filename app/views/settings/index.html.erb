@@ -1,0 +1,30 @@
+<!-- setting nav -->
+<nav>
+    <div class="logo">
+      <a href="/"><h1>MEAL<span id="logoSpan">123</span></h1></a>
+    </div>
+
+    <div class="settingNav">
+
+      <% if user_signed_in? %>
+
+              <a href="/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+
+              <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+
+              <a href="/list"><img src="/assets/list_icon.jpg" alt="list"></a>
+
+      <% end %>
+    </div>
+</nav>
+
+
+
+<!-- log out button -->
+<% if user_signed_in? %>
+    <div class="logout">
+        <%= form_tag(destroy_user_session_path, :method => :delete) do %>
+          <%= submit_tag "Logout", class: "btn"%>
+        <% end %>
+    </div>
+<% end %>

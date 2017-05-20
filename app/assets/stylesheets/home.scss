@@ -2,20 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
 #hb2 {
  margin: 10px;
- background-color: #4BB74C;
+ background-color: #1CD96B;
  color: white;
  width: 130px;
  height: 45px;
  border-radius: 10px;
- border: 1px solid #43a344;
+ border: 1px solid #0ed963;
  font-size: 18px;
 }
 
 #hb2:hover {
- background-color: #23b624;
- border: 1px solid #43a344;
+ background-color: #30e97d;
+ border: 1px solid #18d969;
 }
 
 
@@ -24,6 +25,26 @@
 @media (min-width: 400px) {
 
 // carousel styling
+  // .carousel {
+  //   position: relative;
+  //   top: 30px;
+  //   width: 100%;
+  //   min-height: 400px;
+  //   background-image: url(/assets/slideImg1.jpg);
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   text-align: center;
+  // }
+
+  #carH1 {
+    // position: relative;
+    // margin: 10px;
+    // padding: 0;
+    font-size: 44px;
+    text-shadow: 1px 1px #636363;
+    color: white;
+  }
+
   .carousel {
     position: relative;
     top: 30px;
@@ -32,16 +53,18 @@
 
   .carouselContent {
     position: relative;
-    height: 568px;
-    width: 400px;
-    top: -100px;
+    margin: 0;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    top: -200px;
+    // top: 50%;
+    // transform-y: -50%;
+    max-height: 300px;
+    min-width: 400px;
+    max-width: 870px;
     text-align: center;
     color: white;
-  }
-
-  #carH1 {
-    font-size: 44px;
-    text-shadow: 1px 1px #636363;
+    z-index: 1;
   }
 
   #slides {
@@ -73,23 +96,23 @@
 
   .img1 {
     position: relative;
-    left: -240px;
-    width: 750px;
-    height: 568px;
+    left: -10px;
+    max-width: 120%;
+    height: auto;
   }
 
   .img2 {
     position: relative;
-    left: -240px;
-    width: 750px;
-    height: 568px;
+    left: -10px;
+    max-width: 120%;
+    height: auto;
   }
 
   .img3 {
     position: relative;
-    left: -140px;
-    width: 650px;
-    height: 568px;
+    left: -10px;
+    max-width: 120%;
+    height: auto;
   }
 
 
@@ -97,7 +120,7 @@
   #hb1 {
     position: fixed;
     top: 2px;
-    left: 65%;
+    right: 1%;
     z-index: 1;
   }
 

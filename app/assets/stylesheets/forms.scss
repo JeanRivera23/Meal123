@@ -18,21 +18,53 @@
     left: 0px;
     width: 300px;
     height: 300px;
-    padding: 20px;
+    padding: 40px;
+    padding-top: 20px;
     background-color: white;
     border-radius: 15px;
 
-    -webkit-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
-    -moz-box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
-    box-shadow: -4px -27px 39px 3px rgba(10,9,10,1);
+    -webkit-box-shadow: 3px 4px 12px -1px #706f70;
+    -moz-box-shadow: 3px 4px 12px -1px #706f70;
+    box-shadow: 3px 4px 12px -1px #706f70;
   }
 
+  .field {
+    margin-bottom: 5px;
+  }
+
+  #formH1 {
+    color: #FF9447;
+    letter-spacing: .05em;
+  }
+
+  #signUpFormBtn {
+    margin: 10px;
+    background-color: #FF9447;
+    color: white;
+    width: 130px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #fe8b39;
+    font-size: 18px;
+    position: relative;
+    top: -4px;
+    left: -10px;
+  }
+
+  #signUpFormBtn:hover {
+    background-color: #FFB347;
+    border: 1px solid #fead3b;
+  }
 }
 
 /* Larger than phablet */
 
 @media (min-width: 550px) {
-
+  #formsBody {
+    background-image: url(/assets/form400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
 }
 
 /* Larger than tablet */

@@ -2,18 +2,18 @@
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
 
-
-document.addEventListener("DOMContentLoaded", function (event) {
-
-    // carousel js
-    var slides = document.querySelectorAll('#slides .slide');
-    var currentSlide = 0;
-    var slideInterval = setInterval(nextSlide,4000);
-
-    function nextSlide() {
-        slides[currentSlide].className = 'slide';
-        currentSlide = (currentSlide+1)%slides.length;
-        slides[currentSlide].className = 'slide showing';
-    }
-
-})
+// document.addEventListener("DOMContentLoaded", function (event) {
+//
+//
+//     // carousel js
+//     var slides = document.querySelectorAll('#slides .slide');
+//     var currentSlide = 0;
+//     var slideInterval = setInterval(nextSlide,4000);
+//
+//     function nextSlide() {
+//         slides[currentSlide].className = 'slide';
+//         currentSlide = (currentSlide+1)%slides.length;
+//         slides[currentSlide].className = 'slide showing';
+//     }
+//
+// })

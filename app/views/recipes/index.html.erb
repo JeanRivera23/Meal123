@@ -1,0 +1,22 @@
+<!-- recipe nav -->
+<nav>
+
+    <div class="logo">
+      <a href="/"><h1>MEAL<span id="logoSpan">123</span></h1></a>
+    </div>
+
+    <div class="favoriteNav">
+
+      <% if user_signed_in? %>
+
+              <a href="/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+
+              <a href="/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
+
+              <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+
+              <a href="/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+
+      <% end %>
+    </div>
+</nav>

@@ -1,0 +1,77 @@
+<body id="listBody">
+  <!-- list nav -->
+  <nav>
+      <div class="logo">
+        <a href="/"><h1>MEAL<span id="logoSpan">123</span></h1></a>
+      </div>
+
+      <div class="listNav">
+
+        <% if user_signed_in? %>
+
+                <a href="/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+
+                <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+
+                <a href="/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+
+        <% end %>
+      </div>
+  </nav>
+
+  <!-- list container -->
+  <div class="listContainer">
+
+    <!-- button, form for adding items -->
+    <div class="logout">
+      <% if user_signed_in? %>
+              <%= form_tag(destroy_user_session_path, :method => :delete) do %>
+                <%= submit_tag "add", class: "btn"%>
+              <% end %>
+      <% end %>
+    </div>
+
+    <h1 id="listH1">My Grocery list</h1>
+
+    <div class="listCategory">
+      <h3 class="listH3">Produce</h3>
+        <ul class="listUl">
+          <li><input type="checkbox">Tomatoes</li>
+        </ul>
+    </div>
+
+    <div class="listCategory">
+      <h3 class="listH3">Bakery and Bread</h3>
+        <ul class="listUl">
+          <li><input type="checkbox">Tomatoes</li>
+        </ul>
+    </div>
+
+    <div class="listCategory">
+      <h3 class="listH3">Bakery and Bread</h3>
+        <ul class="listUl">
+          <li><input type="checkbox">Tomatoes</li>
+        </ul>
+    </div>
+
+    <h3>Dairy, Cheese and Eggs</h3>
+
+    <h2>Meat and Seafood</h2>
+
+    <h2>Frozen Foods</h2>
+
+    <h2>Oils, Sauces, Salad Dressings, Condiments</h2>
+
+    <h2>Cereals and Breakfast Foods</h2>
+
+    <h2>Pasta and Rice</h2>
+
+    <h2>Soups and Canned Goods</h2>
+
+    <h2>Snacks and Crackers</h2>
+
+    <h2>Drinks</h2>
+
+  </div>
+
+</body>

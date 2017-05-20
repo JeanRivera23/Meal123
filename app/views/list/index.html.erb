@@ -19,58 +19,112 @@
       </div>
   </nav>
 
+  <!-- button, form for adding items -->
+  <% if user_signed_in? %>
+      <div class="addItem">
+          <%= form_tag(destroy_user_session_path, :method => :delete) do %>
+            <%= submit_tag "+", class: "plusBtn"%>
+          <% end %>
+      </div>
+  <% end %>
+
   <!-- list container -->
   <div class="listContainer">
 
-    <!-- button, form for adding items -->
-    <div class="logout">
-      <% if user_signed_in? %>
-              <%= form_tag(destroy_user_session_path, :method => :delete) do %>
-                <%= submit_tag "add", class: "btn"%>
-              <% end %>
-      <% end %>
-    </div>
-
-    <h1 id="listH1">My Grocery list</h1>
-
     <div class="listCategory">
-      <h3 class="listH3">Produce</h3>
+      <h4 class="listh4">Produce</h4>
         <ul class="listUl">
           <li><input type="checkbox">Tomatoes</li>
+          <li><input type="checkbox">Broccoli</li>
+          <li><input type="checkbox">Squash</li>
+          <li><input type="checkbox">Sweet Potatoes</li>
+          <li><input type="checkbox">Green Peppers</li>
         </ul>
     </div>
 
     <div class="listCategory">
-      <h3 class="listH3">Bakery and Bread</h3>
+      <h4 class="listh4">Bakery &amp; Bread</h4>
         <ul class="listUl">
-          <li><input type="checkbox">Tomatoes</li>
+          <li><input type="checkbox">Dinner Rolls</li>
+          <li><input type="checkbox">Whole Wheat Loaf</li>
         </ul>
     </div>
 
     <div class="listCategory">
-      <h3 class="listH3">Bakery and Bread</h3>
+      <h4 class="listh4">Dairy</h4>
         <ul class="listUl">
-          <li><input type="checkbox">Tomatoes</li>
+          <li><input type="checkbox">Milk</li>
+          <li><input type="checkbox">Eggs</li>
+          <li><input type="checkbox">Butter</li>
         </ul>
     </div>
 
-    <h3>Dairy, Cheese and Eggs</h3>
+    <div class="listCategory">
+      <h4 class="listh4">Meat &amp; Seafood</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">1/3 1b Lean Ground Beef</li>
+          <li><input type="checkbox">1/3 1b Ground Pork</li>
+          <li><input type="checkbox">1/3 1b Ground Veal</li>
+        </ul>
+    </div>
 
-    <h2>Meat and Seafood</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Frozen Foods</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">Mixed Berries</li>
+        </ul>
+    </div>
 
-    <h2>Frozen Foods</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Oils, Sauces,  Condiments</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">Nutmeg</li>
+          <li><input type="checkbox">Allspice</li>
+        </ul>
+    </div>
 
-    <h2>Oils, Sauces, Salad Dressings, Condiments</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Cereals &amp; Breakfast Foods</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">Oatmeal</li>
+          <li><input type="checkbox">Maple Syrup</li>
+        </ul>
+    </div>
 
-    <h2>Cereals and Breakfast Foods</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Pasta &amp; Rice</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">2 boxes Penne</li>
+        </ul>
+    </div>
 
-    <h2>Pasta and Rice</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Soups &amp; Canned Goods</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">16oz Tomato Sauce</li>
+        </ul>
+    </div>
 
-    <h2>Soups and Canned Goods</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Baking Goods</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">Quick Rise Yeast</li>
+        </ul>
+    </div>
 
-    <h2>Snacks and Crackers</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Snacks &amp;amp; Crackers</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">Chocolate</li>
+        </ul>
+    </div>
 
-    <h2>Drinks</h2>
+    <div class="listCategory">
+      <h4 class="listh4">Drinks</h4>
+        <ul class="listUl">
+          <li><input type="checkbox">Ginger Ale</li>
+        </ul>
+    </div>
 
   </div>
 

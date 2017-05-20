@@ -14,17 +14,32 @@
 
               <a href="/list"><img src="/assets/list_icon.jpg" alt="list"></a>
 
+              <!-- log out button -->
+              <% if user_signed_in? %>
+                  <div class="settingLogOut">
+                      <%= form_tag(destroy_user_session_path, :method => :delete) do %>
+                        <%= submit_tag "Logout", class: "logOutBtn"%>
+                      <% end %>
+                  </div>
+              <% end %>
+
       <% end %>
     </div>
 </nav>
 
+<div class="settingsContainer">
 
+    <div class="settingForms" id="dietPreferences">
 
-<!-- log out button -->
-<% if user_signed_in? %>
-    <div class="logout">
-        <%= form_tag(destroy_user_session_path, :method => :delete) do %>
-          <%= submit_tag "Logout", class: "btn"%>
-        <% end %>
+        <h2 class="settingH">Preferences</h2>
+
     </div>
-<% end %>
+
+
+    <div class="settingForms" id="editUser">
+
+        <h2 class="settingH">Edit Account</h2>
+
+    </div>
+
+</div>

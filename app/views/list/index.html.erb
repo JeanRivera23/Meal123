@@ -22,6 +22,12 @@
   <!-- button, form for adding items -->
   <% if user_signed_in? %>
       <div class="addItem">
+
+          <input id="inItem" type="text" name="" placeholder="add item">
+
+          <input id="inCategory" type="text" name="" placeholder="category">
+
+
           <%= form_tag(destroy_user_session_path, :method => :delete) do %>
             <%= submit_tag "+", class: "plusBtn"%>
           <% end %>

@@ -69,9 +69,12 @@
 
   .addItem {
     position: fixed;
-    bottom: 1%;
-    right: 0%;
+    height: 10%;
+    width: 100%;
+    background-color: white;
+    bottom: 0;
     z-index: 1;
+    border-top: 1px solid #919191;
   }
 
   .plusBtn {
@@ -86,6 +89,10 @@
    text-shadow: 1px 1px #ABABAB;
    letter-spacing: .05em;
 
+   position: absolute;
+   top: 3px;
+   right: 4%;
+
    -webkit-box-shadow: 1px 2px 5px -1px #706f70;
    -moz-box-shadow: 1px 2px 5px -1px #706f70;
    box-shadow: 1px 2px 5px -1px #706f70;
@@ -94,6 +101,23 @@
  .plusBtn:hover {
    background-color: #FFB347;
    border: 1px solid #fead3b;
+ }
+
+ #inItem {
+   position: relative;
+   top: 18px;
+   left: 10px;
+   width: 150px;
+   height: 20px;
+   margin-right: 25px;
+ }
+
+ #inCategory {
+   position: relative;
+   top: 18px;
+  //  left: 10px;
+   width: 150px;
+   height: 20px;
  }
 
 }

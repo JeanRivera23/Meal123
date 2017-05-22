@@ -41,7 +41,7 @@
   font-size: 15px;
   text-shadow: 1px 1px #ABABAB;
   letter-spacing: .05em;
-  
+
   -webkit-box-shadow: 1px 2px 5px -1px #706f70;
   -moz-box-shadow: 1px 2px 5px -1px #706f70;
   box-shadow: 1px 2px 5px -1px #706f70;
@@ -54,6 +54,7 @@
 
 .logo {
   color: #FF9447;
+  width: 140px;
   letter-spacing: .3em;
   text-shadow: 1px 1px #919191;
 }

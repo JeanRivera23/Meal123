@@ -1,7 +1,7 @@
 // # Place all the behaviors and hooks related to the matching controller here.
 // # All this logic will automatically be available in application.js.
 // # You can use CoffeeScript in this file: http://coffeescript.org/
-    
+
 // document.addEventListener("DOMContentLoaded", function (event) {
 //
 //
@@ -17,3 +17,11 @@
 //     }
 //
 // })
+
+
+
+// $.getJSON("https://api.edamam.com/search?q=chicken&app_id=${57176c0b}&app_key=${843e171872757eb147ab562682eb0efc}&from=0&to=3&calories=gte%20591,%20lte%20722&health=alcohol-free",
+//         function(response) {
+//           console.log(response);
+//         }
+//       );

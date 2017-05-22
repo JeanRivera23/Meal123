@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  dessert_id: 1
+  sunday_id: 1
+  monday_id: 1
+  tuesday_id: 1
+  wednesday_id: 1
+  thursday_id: 1
+  friday_id: 1
+  saturday_id: 1
+
+two:
+  dessert_id: 1
+  sunday_id: 1
+  monday_id: 1
+  tuesday_id: 1
+  wednesday_id: 1
+  thursday_id: 1
+  friday_id: 1
+  saturday_id: 1

@@ -1,12 +1,7 @@
 Rails.application.routes.draw do
 
-  get 'settings/index'
+  devise_for :users, :controllers => { registrations: 'registrations' }
 
-  get 'list/index'
-
-  get 'favorites/index'
-
-  devise_for :users
   root to: "home#index"
 
   resources :profiles, :recipes, :favorites, :list, :settings

@@ -1,2 +1,59 @@
-<h1>Recipes#show</h1>
-<p>Find me in app/views/recipes/show.html.erb</p>
+<!-- recipe nav -->
+<nav>
+
+    <div class="logo">
+      <a href="/"><h1>MEAL<span id="logoSpan">123</span></h1></a>
+    </div>
+
+    <div class="recipeNav">
+
+      <% if user_signed_in? %>
+
+          <a href="/users/<%= @user.id %>/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+
+          <a href="/users/<%= @user.id %>/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
+
+          <a href="/users/<%= @user.id %>/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+
+          <a href="/users/<%= @user.id %>/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+
+      <% end %>
+    </div>
+</nav>
+
+<body id="recipeBody">
+
+  <div class="recipeShowContainer">
+
+    <div class="recipeShowImg">
+    </div>
+
+      <div id="recipeName">
+        <h2 id="recipeNameH2"><%= @recipe.label%></h2>
+      </div>
+
+      <div class="recipeDetails">
+
+          <div class="recipeCategory">
+            <h3 class="recipeH4">Ingredients</h3>
+              <ul class="recipeUl">
+
+                <li><%= @recipe.ingredients.html_safe %></li>
+
+              </ul>
+
+          </div>
+
+          <br>
+          <hr>
+
+          <div class="recipeCategory">
+            <h3 class="recipeH4">directions</h3>
+              <ol class="recipeOl">
+
+                <li><%= @recipe.directions.html_safe %></li>
+
+              </ol>
+          </div>
+  </div>
+</body>

@@ -1,2 +1,0 @@
-class Saturday < ApplicationRecord
-end

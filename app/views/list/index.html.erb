@@ -9,11 +9,11 @@
 
         <% if user_signed_in? %>
 
-                <a href="/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+                <a href="/users/<%= @user.id %>/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
 
-                <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+                <a href="/users/<%= @user.id %>/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
 
-                <a href="/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+                <a href="/users/<%= @user.id %>/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
 
         <% end %>
       </div>

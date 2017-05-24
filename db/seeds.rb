@@ -6,6 +6,15 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+# users = User.create([
+#
+#   {
+#     username: "jean",
+#     password: "123456",
+#     email: "jean@email.com"
+#   }
+#
+# ])
 
 recipes = Recipe.create([
   # BREAKFAST
@@ -14,7 +23,7 @@ recipes = Recipe.create([
 
     category: "breakfast",
 
-    ingredients: "2 tablespoons vegetable oil; 8 ounces cooked corned beef, diced; 1 white onion, finely chopped; 1 bell pepper, finely chopped; 2 medium baking potatoes, peeled and shredded (about 2 cups); 4 tablespoons unsalted butter; 4 large eggs; Kosher salt and freshly ground pepper; 4 slices cheddar cheese (about 2 ounces)",
+    ingredients: "<li>2 tablespoons vegetable oil</li> <li>8 ounces cooked corned beef, diced</li> <li>1 white onion, finely chopped</li> <li>1 bell pepper, finely chopped</li> <li>2 medium baking potatoes, peeled and shredded (about 2 cups)</li> <li>4 tablespoons unsalted butter; 4 large eggs; Kosher salt and freshly ground pepper; 4 slices cheddar cheese (about 2 ounces)",
 
     directions: "Heat the oil in a medium skillet over high heat. Add the corned beef and cook, stirring with a wooden spoon, until it releases some fat and browns slightly, about 3 minutes. Stir in the onion, bell pepper and potatoes and cook, undisturbed, until brown and crisp on the bottom, about 6 minutes. Continue cooking, turning the hash as it browns evenly, about 15 more minutes.; Meanwhile, heat the butter in a nonstick skillet over medium-high heat. Fry the eggs sunny-side up or over easy; season with salt and pepper.; Place the cheese slices on top of the hash, reduce the heat and let sit until the cheese melts, about 1 minute. To serve, top each portion of hash with a fried egg."
   },
@@ -130,101 +139,274 @@ recipes = Recipe.create([
     ingredients: "1 orange, sliced; 1 cup sugar; ½ cup water; 1 (14 oz) can sweetened condensed milk; 3 cups plain yogurt; 1 ⅓ Tbsp unflavored gelatin powder; 1 Tbsp orange zest; ½ oz orange liqueur",
 
     directions: "In a pot, add the sliced orange, 1 cup of sugar and the water. Allow to boil for about 10 minutes. Remove the slices from the syrup and refrigerate oranges and syrup.; In a blender, mix the condensed milk, yogurt, orange zest and liqueur. Add the gelatin (prepared according to the instructions on the package) and pulse a little more. Set aside.; Divide the orange slices among individual flan molds that have been coated with oil. Pour in the mixture from the blender and place in the refrigerator for 4 hours.; Remove from molds and serve with the syrup."
-  },
+  }
 
   ])
 
 
-  breakfasts = Breakfast.create([
-    {recipe_id: 1},
-    {recipe_id: 2},
-    {recipe_id: 3}
-  ])
+  user_recipes = UserRecipe.create([
 
-  lunches = Lunch.create([
-    {recipe_id: 4},
-    {recipe_id: 5},
-    {recipe_id: 6}
-  ])
-
-  dinners = Dinner.create([
-    {recipe_id: 7},
-    {recipe_id: 8},
-    {recipe_id: 9}
-  ])
-
-  desserts = Dessert.create([
-    {recipe_id: 10},
-    {recipe_id: 11},
-    {recipe_id: 12}
-  ])
-
-  sunday = Sunday.create([
     {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
+      user_id: 1,
+
+      recipe_id: 1,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 2,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 3,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 4,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 5,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 6,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 7,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 8,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 9,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 10,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 11,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 12,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 13,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 14,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 15,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 16,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 17,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 18,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 19,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 20,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 21,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
+    },
+
+    {
+      user_id: 1,
+
+      recipe_id: 22,
+
+      start_date: "2017-5-21",
+
+      end_date: "2017-5-27",
+
     }
+
   ])
 
-  monday = Monday.create([
+
+  favorites = Favorite.create([
+
     {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
-    }
+      user_id: 1,
+      recipe_id: 1,
+    },
+
+    {
+      user_id: 1,
+      recipe_id: 4,
+    },
+
+    {
+      user_id: 1,
+      recipe_id: 7,
+    },
+
   ])
-
-  tuesday = Tuesday.create([
-    {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
-    }
-  ])
-
-  wednesday = Wednesday.create([
-    {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
-    }
-  ])
-
-  thursday = Thursday.create([
-    {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
-    }
-  ])
-
-  friday = Friday.create([
-    {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
-    }
-  ])
-
-  saturday = Saturday.create([
-    {
-      breakfast_id: Recipe.where(category: "breakfast").shuffle.first.id,,
-      lunch_id: Recipe.where(category: "lunch").shuffle.first.id,,
-      dinner_id: Recipe.where(category: "dinner").shuffle.first.id,
-    }
-  ])
-
-
-  week = Week.create([
-    {
-      dessert_id: Recipe.where(category: "dessert").shuffle.first.id,
-      sunday_id: Sunday.first.id,
-      monday_id: Monday.first.id,
-      tuesday_id: Tuesday.first.id,
-      wednesday_id: Wednesday.first.id,
-      thursday_id: Thursday.first.id,
-      friday_id: Friday.first.id,
-      saturday_id: Saturday.first.id
-    }
-    ])

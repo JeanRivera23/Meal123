@@ -9,89 +9,42 @@
 
       <% if user_signed_in? %>
 
-              <a href="/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+              <a href="/users/<%= @user.id %>/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
 
-              <a href="/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
+              <a href="/users/<%= @user.id %>/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
 
-              <a href="/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+              <a href="/users/<%= @user.id %>/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
 
       <% end %>
     </div>
 </nav>
 
-<div class="favoriteRecipes">
 
-    <!-- breakfast -->
-    <div class="recipeContainer">
+<div class="favoriteRecipes" id ="sunday">
 
+    <% @favorites.each do |f| %>
 
-        <div class="recipeImgContainer" id="breakfast">
+        <div class="recipeContainer">
 
-        </div>
+            <div class="recipeImgContainer" id="breakfast">
 
-          <div class="recipeContent">
+            </div>
 
-            <p class="recipeH2">Breakfast</p>
+              <div class="recipeContent">
 
-            <h5 class="recipeP"><a href="#" class="profileA">Blueberry Oatmeal</a></h5>
+                <p class="recipeH2">
+                  <%= f.recipe.category %>
+                </p>
 
-          </div>
+                <h5 class="recipeP">
+                  <a href="/recipes/<%= f.recipe.id %>" class="profileA">
+                    <%= f.recipe.label %>
+                  </a>
+                </h5>
 
-    </div>
-
-
-    <!-- Lunch -->
-    <div class="recipeContainer">
-
-        <div class="recipeImgContainer" id="lunch">
-
-        </div>
-
-        <div class="recipeContent">
-
-          <p class="recipeH2">Lunch</p>
-
-          <h5 class="recipeP"><a href="#" class="profileA">Egg Salad Sandwich</a></h5>
+              </div>
 
         </div>
-
-    </div>
-
-
-    <!-- dinner -->
-    <div class="recipeContainer">
-
-        <div class="recipeImgContainer" id="dinner">
-
-        </div>
-
-        <div class="recipeContent">
-
-          <p class="recipeH2">Dinner</p>
-
-          <h5 class="recipeP"><a href="/recipes" class="profileA">Norwegian Meatballs</a></h5>
-
-        </div>
-
-    </div>
-
-
-    <!-- dessert -->
-    <div class="recipeContainer">
-
-        <div class="recipeImgContainer" id="dessert">
-
-        </div>
-
-        <div class="recipeContent">
-
-          <p class="recipeH2">This Week's Dessert</p>
-
-          <h5 class="recipeP"><a href="#" class="profileA">Raspberry Key Lime Squares</a></h5>
-
-
-        </div>
-
-    </div>
+    <% end %>
 
 </div>

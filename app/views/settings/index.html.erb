@@ -8,11 +8,11 @@
 
       <% if user_signed_in? %>
 
-              <a href="/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
+              <a href="/users/<%= @user.id %>/profiles"><img src="/assets/home_icon.jpg" alt="home"></a>
 
-              <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+              <a href="/users/<%= @user.id %>/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
 
-              <a href="/list"><img src="/assets/list_icon.jpg" alt="list"></a>
+              <a href="/users/<%= @user.id %>/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
 
               <!-- log out button -->
               <% if user_signed_in? %>

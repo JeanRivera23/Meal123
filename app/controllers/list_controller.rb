@@ -1,5 +1,6 @@
 class ListController < ApplicationController
   def index
+    @user = current_user
   end
 
   def show
@@ -13,5 +14,5 @@ class ListController < ApplicationController
 
   def destroy
   end
-  
+
 end

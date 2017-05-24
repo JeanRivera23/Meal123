@@ -10,53 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170522205928) do
-
-  create_table "breakfasts", force: :cascade do |t|
-    t.integer  "recipe_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "desserts", force: :cascade do |t|
-    t.integer  "recipe_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "dinners", force: :cascade do |t|
-    t.integer  "recipe_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema.define(version: 20170523235030) do
 
   create_table "favorites", force: :cascade do |t|
     t.integer  "user_id"
     t.integer  "recipe_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "fridays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "lunches", force: :cascade do |t|
-    t.integer  "recipe_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "mondays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
   end
 
   create_table "recipes", force: :cascade do |t|
@@ -68,43 +28,14 @@ ActiveRecord::Schema.define(version: 20170522205928) do
     t.string   "category"
   end
 
-  create_table "saturdays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "sundays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "thursdays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "tuesdays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
   create_table "user_recipes", force: :cascade do |t|
-    t.integer  "week_id"
+    t.integer  "recipe_id"
     t.integer  "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.date     "start_date"
+    t.date     "end_date"
+    t.string   "category"
   end
 
   create_table "users", force: :cascade do |t|
@@ -120,31 +51,9 @@ ActiveRecord::Schema.define(version: 20170522205928) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
-    t.string   "f_name"
-    t.string   "l_name"
+    t.string   "username"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  end
-
-  create_table "wednesdays", force: :cascade do |t|
-    t.integer  "breakfast_id"
-    t.integer  "lunch_id"
-    t.integer  "dinner_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-  end
-
-  create_table "weeks", force: :cascade do |t|
-    t.integer  "dessert_id"
-    t.integer  "sunday_id"
-    t.integer  "monday_id"
-    t.integer  "tuesday_id"
-    t.integer  "wednesday_id"
-    t.integer  "thursday_id"
-    t.integer  "friday_id"
-    t.integer  "saturday_id"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
   end
 
 end

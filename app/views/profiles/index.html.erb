@@ -9,11 +9,11 @@
 
       <% if user_signed_in? %>
 
-              <a href="/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
+          <a href="/users/<%= @user.id %>/list"><img src="/assets/list_icon.jpg" alt="grocery list"></a>
 
-              <a href="/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
+          <a href="/users/<%= @user.id %>/favorites"><img src="/assets/favorite_icon.jpg" alt="favorites"></a>
 
-              <a href="/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
+          <a href="/users/<%= @user.id %>/settings"><img src="/assets/setting_icon.jpg" alt="settings"></a>
 
       <% end %>
     </div>
@@ -64,6 +64,34 @@
 </div>
 
 
+<!-- Test recipe container -->
+<div class="profileRecipes" id ="sunday">
+    <!-- Test -->
+    <% @recipes.each do |r| %>
+
+        <div class="recipeContainer">
+
+            <div class="recipeImgContainer" id="breakfast">
+
+            </div>
+
+              <div class="recipeContent">
+
+                <p class="recipeH2">
+                  <%= r.category %>
+                </p>
+
+                <h5 class="recipeP">
+                  <a href="/recipes/<%= r.id %>" class="profileA">
+                    <%= r.label %>
+                  </a>
+                </h5>
+
+              </div>
+
+        </div>
+    <% end %>
+
 <!-- Sunday recipe container -->
 <div class="profileRecipes" id ="sunday">
 
@@ -79,9 +107,7 @@
 
             <p class="recipeH2">Breakfast</p>
 
-            <h5 class="recipeP"><a href="#" class="profileA">
-              <%= @recipe.label %>
-            </a></h5>
+            <h5 class="recipeP"><a href="#" class="profileA">Blueberry Oatmeal</a></h5>
 
           </div>
 

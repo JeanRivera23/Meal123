@@ -67,7 +67,6 @@
 
   .recipeH4 {
     width: 100%;
-    // background-color: #FF9447;
     color: #FF9447;
     font-weight: normal;
     text-transform: uppercase;
@@ -116,6 +115,20 @@
     line-height: 1.5em;
   }
 
+  .showFavBtn {
+    position: relative;
+    left: 5px;
+    margin: 0px;
+    top: 15px;
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+  }
+
+  .showBtnIcon {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 

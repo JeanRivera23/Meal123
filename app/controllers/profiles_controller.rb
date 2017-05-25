@@ -3,4 +3,5 @@ class ProfilesController < ApplicationController
     @recipes = current_user.user_recipes
     @user = current_user
   end
+
 end

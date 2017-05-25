@@ -11,10 +11,31 @@ class FavoritesController < ApplicationController
   def create
     @favorite = Favorite.new
     @favorite = Favorite.create(params_favorites)
-    @favorite.user_id = current_user.id
+
+    @favorite.save
+
+    if @favorite.save
+      redirect_to user_favorites_path
+      # add success message
+    else
+      render user_favorites_path
+      # add some error message
+    end
+
   end
 
   def destroy
+    @user = current_user
+    @favorite = Favorite.find(params[:id])
+    @favorite.destroy
+
+    if @favorite.destroy
+      redirect_to user_favorites_path
+      # add success message
+    else
+      render user_favorites_path
+      # add some error message
+    end
 
   end
 

@@ -75,7 +75,10 @@
               <div class="recipeContent">
 
                 <div class="recipeFavBtn">
-                    <%= form_tag(new_user_favorite_path, :method => :get, :class => "recipeFavForm") do %>
+                    <%= form_tag("/users/#{r.user_id}/recipes/#{r.recipe_id}", :method => :profile_add_favorite, :class => "recipeFavForm") do %>
+                      <!-- handles the authenticitytoken error -->
+                      <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+
                       <%= image_submit_tag("favorite_icon.jpg", class: "favBtnIcon") %>
                     <% end %>
                 </div>
@@ -85,7 +88,7 @@
                 </p>
 
                 <h5 class="recipeP">
-                  <a href="/recipes/<%= r.id %>" class="profileA">
+                  <a href="/users/<%= r.user_id %>/recipes/<%= r.recipe_id %>" class="profileA">
                     <%= r.recipe.label %>
                   </a>
                 </h5>

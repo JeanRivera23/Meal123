@@ -32,6 +32,17 @@
 
               <div class="recipeContent">
 
+                <!-- favorite delete -->
+                <div class="recipeFavBtn">
+                    <%= form_tag("/users/#{f.user_id}/favorites/#{f.id}", :method => :delete, :class => "recipeFavForm") do %>
+                    
+                      <!-- handles the authenticitytoken error -->
+                      <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+
+                      <%= image_submit_tag("trash_icon.png", class: "favBtnIcon") %>
+                    <% end %>
+                </div>
+
                 <p class="recipeH2">
                   <%= f.recipe.category %>
                 </p>

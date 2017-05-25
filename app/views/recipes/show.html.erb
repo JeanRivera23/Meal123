@@ -29,10 +29,21 @@
     </div>
 
       <div id="recipeName">
-        <h2 id="recipeNameH2"><%= @recipe.label%></h2>
+        <h2 id="recipeNameH2">
+          <%= @recipe.label%>
+        </h2>
       </div>
 
       <div class="recipeDetails">
+
+          <div class="showFavBtn">
+            <%= form_tag(user_recipe_path, :method => :add_favorite, :class => "recipeFavForm") do %>
+                <!-- handles the authenticitytoken error -->
+                <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+
+                <%= image_submit_tag("favorite_icon.png", class: "showBtnIcon") %>
+            <% end %>
+          </div>
 
           <div class="recipeCategory">
             <h3 class="recipeH4">Ingredients</h3>

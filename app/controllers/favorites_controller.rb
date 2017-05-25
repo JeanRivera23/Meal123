@@ -9,6 +9,7 @@ class FavoritesController < ApplicationController
   end
 
   def create
+    @favorite = Favorite.new
     @favorite = Favorite.create(params_favorites)
     @favorite.user_id = current_user.id
   end

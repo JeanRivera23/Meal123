@@ -23,7 +23,9 @@ recipes = Recipe.create([
 
     category: "breakfast",
 
-    ingredients: "<li>2 tablespoons vegetable oil</li> <li>8 ounces cooked corned beef, diced</li> <li>1 white onion, finely chopped</li> <li>1 bell pepper, finely chopped</li> <li>2 medium baking potatoes, peeled and shredded (about 2 cups)</li> <li>4 tablespoons unsalted butter; 4 large eggs; Kosher salt and freshly ground pepper; 4 slices cheddar cheese (about 2 ounces)",
+    recipe_img: "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/10/23/0/FNMCornedBeefHash_s3x4.jpg.rend.hgtvcom.616.462.jpeg",
+
+    ingredients: "<li>2 tablespoons vegetable oil</li> <li>8 ounces cooked corned beef, diced</li> <li>1 white onion, finely chopped</li> <li>1 bell pepper, finely chopped</li> <li>2 medium baking potatoes, peeled and shredded (about 2 cups)</li> <li>4 tablespoons unsalted butter</li> <li>4 large eggs</li> <li>Kosher salt and freshly ground pepper</li> <li>4 slices cheddar cheese (about 2 ounces)</li>",
 
     directions: "Heat the oil in a medium skillet over high heat. Add the corned beef and cook, stirring with a wooden spoon, until it releases some fat and browns slightly, about 3 minutes. Stir in the onion, bell pepper and potatoes and cook, undisturbed, until brown and crisp on the bottom, about 6 minutes. Continue cooking, turning the hash as it browns evenly, about 15 more minutes.; Meanwhile, heat the butter in a nonstick skillet over medium-high heat. Fry the eggs sunny-side up or over easy; season with salt and pepper.; Place the cheese slices on top of the hash, reduce the heat and let sit until the cheese melts, about 1 minute. To serve, top each portion of hash with a fried egg."
   },
@@ -32,6 +34,8 @@ recipes = Recipe.create([
     label: "Banana Sour Cream Pancakes",
 
     category: "breakfast",
+
+    recipe_img: "http://www.blissfullydelicious.com/wp-content/uploads/2011/02/banana-sour-cream-pancakes.jpg",
 
     ingredients: "1 1/2 cups flour; 3 tablespoons sugar; 2 teaspoons baking powder; 1 1/2 teaspoons kosher salt; 1/2 cup sour cream; 3/4 cup plus 1 tablespoon milk; 2 extra-large eggs; 1 teaspoon pure vanilla extract; 1 teaspoon grated lemon zest; Unsalted butter; 2 ripe bananas, diced, plus extra for serving; Pure maple syrup",
 
@@ -42,6 +46,8 @@ recipes = Recipe.create([
     label: "Scrambled Eggs with Smoked Salmon",
 
     category: "breakfast",
+
+    recipe_img: "http://food.fnr.sndimg.com/content/dam/images/food/fullset/2008/10/2/1/scrambled-eggs-salmon_s4x3.jpg.rend.hgtvcom.616.462.jpeg",
 
     ingredients: "1/4 pound sliced smoked salmon; 12 eggs; 1/2 cup heavy cream; Salt and freshly ground black pepper; 2 tablespoons butter; 12 to 15 blades of fresh chives, finely chopped",
 
@@ -54,6 +60,8 @@ recipes = Recipe.create([
 
     category: "lunch",
 
+    recipe_img: "http://wstale.com/wp-content/uploads/2017/05/landscape-1495237701-delish-candace-cameron-dinner-and-a-workout-1.jpg",
+
     ingredients: "1/3 c. chopped fresh cilantro, plus more for garnish; 1/4 c. extra-virgin olive oil; Juice of 1 lime; 1 tbsp. apple cider vinegar; kosher salt; Freshly ground black pepper; 1 clove garlic, minced; 2 large sweet potatoes, peeled and cut into half inch cubes; 1 large red onion, diced; 2 tbsp. extra-virgin olive oil; kosher salt; 1/4 tsp. chili powder; 2 c. cooked brown rice; 1 can refried beans, drained and rinsed; 1 c. corn (canned or fresh); 1 plum tomato, chopped; 1 avocado, sliced",
 
     directions: "Make Cilantro-Lime Vinaigrette: Pour all ingredients into a blender and mix for 30 to 45 seconds or until thoroughly combined. Set aside. Preheat oven to 425°.; On a large baking sheet, place sweet potatoes and onions. Toss with oil, salt and chili powder. Bake 23 to 25 minutes, or until sweet potatoes are tender.; Assemble burrito bowl: Fill each bowl with brown rice, refried beans, corn, tomato, roasted sweet potato and onion, and slices of avocado. Drizzle with vinaigrette and garnish with extra cilantro, if desired."
@@ -64,6 +72,8 @@ recipes = Recipe.create([
 
     category: "lunch",
 
+    recipe_img: "http://del.h-cdn.co/assets/17/17/640x958/gallery-1493128935-delish-bliss-bowls-pin-1.jpg",
+
     ingredients: "3 c. cherry tomatoes; Extra-virgin olive oil, for drizzling; balsamic vinegar, for drizzling; kosher salt; Freshly ground black pepper; 1 lb. Boneless Skinless Chicken Breast; 1 tsp. Italian seasoning; 1 c. brown rice; 1 c. chopped fresh mozzarella; crushed red pepper flakes; Flaky sea salt; 2 c. baby spinach; 1 lemon, halved; Balsamic glaze, for drizzling",
 
     directions: "Preheat oven to 400°. On a large rimmed baking sheet, toss tomatoes with olive oil and balsamic vinegar and season with salt and pepper.; Season both sides of chicken breasts with salt, pepper and Italian seasoning. Nestle chicken breasts in tomatoes. Bake until the tomatoes are beginning to burst and the chicken is cooked through, about 25 minutes.; Meanwhile, cook rice according to package instructions.; Toss fresh mozzarella with enough olive oil to coat cheese and a pinch each of red pepper flakes and flaky sea salt.; Serve chicken and tomatoes over cooked rice with mozzarella and spinach. Squeeze fresh lemon juice over each serving. Drizzle with balsamic glaze."
@@ -73,6 +83,8 @@ recipes = Recipe.create([
     label: "Healthy Chicken Chickpea Chopped Salad",
 
     category: "lunch",
+
+    recipe_img: "http://www.ambitiouskitchen.com/wp-content/uploads/2012/07/IMG_4456-1024x682.jpg",
 
     ingredients: "2 large romaine hearts, washed and chopped; 1 cup pulled cooked chicken breast; 1 (15.5 oz) can chickpeas, rinsed and drained; 1 cup grape tomatoes, sliced in half; 3/4 cup sweet corn (I grilled mine); 1/4 cup crumbled goat cheese; 1/3 cup cilantro, washed and chopped; 1 small avocado, diced; 1/2 cup BBQ dressing, if desired",
 
@@ -85,6 +97,8 @@ recipes = Recipe.create([
 
     category: "dinner",
 
+    recipe_img: "https://cdn.averiecooks.com/wp-content/uploads/2015/08/salmoninfoil-6-650x964.jpg",
+
     ingredients: "1 medium potato, sliced into very thin rounds about 1/16th-inch thick, divided; about 4 tablespoons olive oil, divided; salt and pepper to taste, divided; 2 salmon filets, about 6 ounces each; 1 large orange, halved; 1 lemon, halved",
 
     directions: "Preheat oven to 400F. To a 12-inch long sheet of foil (I use Reynold's Heavy Duty Non-Stick), add half the potato slices in a pile in the center of foil. Slightly fan out the potatoes so air can circulate. Make sure potatoes are sliced very thin so they cook through in the same amount of time it takes the salmon to cook.; Evenly drizzle the potatoes with about 1 tablespoon of olive oil, season with salt and pepper, and repeat process with another sheet of foil and the remaining potato slices.; Top each pile of potatoes with 1 salmon filet.; Evenly drizzle each salmon filet with about 1 tablespoon olive oil.; Squeeze half the juice of the orange over one salmon filet and half the juice over the other filet.; Squeeze half the juice of the lemon over one salmon filet and half the juice over the other filet.; Season each salmon filet with salt and pepper.; Seal foil packets, making sure to tightly crimp the seams so the olive oil and citrus juices don't leak. Place packets on baking sheet and bake for about 25 to 30 minutes. Carefully open one packet to check for doneness of both salmon and potatoes and if necessary, return to the oven for an additional 5 minutes, or until done."
@@ -95,6 +109,8 @@ recipes = Recipe.create([
 
     category: "dinner",
 
+    recipe_img: "http://sallysbakingaddiction.com/wp-content/uploads/2016/05/honey-garlic-shrimp-5.jpg",
+
     ingredients: "1/3 cup honey; 1/4 cup soy sauce (I use reduced sodium); 1 Tablespoon minced garlic; optional: 1 teaspoon minced fresh ginger; 1 lb medium uncooked shrimp, peeled & deveined; 2 teaspoons olive oil; optional: chopped green onion for garnish",
 
     directions: "Whisk the honey, soy sauce, garlic, and ginger (if using) together in a medium bowl.; Place shrimp in a large zipped-top bag or tupperware. Pour 1/2 of the marinade mixture on top, give it all a shake or stir, then allow shrimp to marinate in the refrigerator for 15 minutes or for up to 8-12 hours. Cover and refrigerate the rest of the marinade for step 3. (Time-saving tip: while the shrimp is marinating, I steamed broccoli and microwaved some quick brown rice.); Heat olive oil in a skillet over medium-high heat. Place shrimp in the skillet. (Discard used marinade.) Cook shrimp on one side until pink-- about 45 seconds-- then flip shrimp over. Pour in remaining marinade and cook it all until shrimp is cooked through, about 1 minute more.; Serve shrimp with cooked marinade sauce and a garnish of green onion. The sauce is excellent on brown rice and steamed veggies on the side."
@@ -104,6 +120,8 @@ recipes = Recipe.create([
     label: "Easy Chicken Fried Steak with Country Gravy",
 
     category: "dinner",
+
+    recipe_img: "http://www.recipegirl.com/wp-content/uploads/2017/02/Chicken-Fried-Steak-600x900.jpg",
 
     ingredients: "3	tablespoons olive oil, divided; 4	tablespoons (1/2 stick) butter, divided; 1	cup + 4 tablespoons all-purpose flour, divided; 1	teaspoon onion powder; 1/2	teaspoon smoked paprika; 1/2	teaspoon cayenne pepper; kosher salt and ground black pepper; 1	large Eggland's Best egg; 1/4	cup water; 4	cube steaks (or round steaks pounded thin with a meat tenderizer); 1 1/2	cups low sodium chicken broth; 1	cup milk",
 
@@ -116,6 +134,8 @@ recipes = Recipe.create([
 
     category: "dessert",
 
+    recipe_img: "https://truffle-assets.imgix.net/96889565-110-frenchtoastballs-dishport1.jpg",
+
     ingredients: "2 tsp dry active yeast; 1 cup lukewarm water; ½ cup + 1 tsp sugar; 4 cups all-purpose flour; 2 tsp salt; 1 large egg yolk; 2 large eggs; ¼ cup canola oil; ½ cup cinnamon sugar; ½ cup maple syrup",
 
     directions: "Mix warm water, yeast and a teaspoon of sugar. Let sit for 5 minutes.; Place remaining sugar, flour and salt in a stand mixer fitted with dough hook attachment.; Slowly pour in eggs, yolk and oil and mix until you get a shaggy dough. Pour in the yeast mixture.; Knead dough for 8 minutes and transfer to a well-oiled glass bowl. Cover with a tea towel and let rise for 1 to 2 hours until doubled in size.; Roll out the dough into a 1-inch thick round. Cut into circles using a 4-inch biscuit cutter.; In a large Dutch oven filled with 4 inches of canola oil, fry the dough at 350ºF until golden on each side.; Roll in cinnamon sugar and drizzle with maple syrup."
@@ -126,6 +146,8 @@ recipes = Recipe.create([
 
     category: "dessert",
 
+    recipe_img: "https://nadiashealthykitchen.com/wp-content/uploads/2016/07/chocolate-orange-cake-vegan-gluten-free_5.jpg",
+
     ingredients: "2 oranges; 6 large eggs; 1 ½ cups granulated sugar; 2 cups almond meal/flour; ½ cup cocoa; 1 tsp baking powder; ½ tsp baking soda; ½ tsp salt; ¾ cup semi-sweet chocolate chips; 1 Tbsp honey; 3 Tbsp unsalted butter; 1 Tbsp Cointreau or Grand Marnier",
 
     directions: "Preheat oven to 350ºF.; Place oranges in a pot, cover with water, bring to a boil and allow to simmer for 1–1 ½ hours, until fork tender. Cool, cut open and remove pips/seeds if any.; Place oranges in a food processor and puree until pulpy. Add remaining ingredients, and blitz until completely incorporated.; Grease a square pie pan with butter, and line with parchment paper. Pour batter into pan, and place in oven for 50-60 minutes, or until middle of cake is firm to the touch.; Allow to cool to room temperature before un-molding.; Place ingredients for glaze in a heat-proof bowl over a saucepan of barely simmering water. Stir until completely melted.; Pour over cake, and garnish with orange zest."
@@ -135,6 +157,8 @@ recipes = Recipe.create([
     label: "Orange Flan",
 
     category: "dessert",
+
+    recipe_img: "https://static01.nyt.com/images/2014/04/07/dining/orangeflan-still/orangeflan-still-articleLarge.jpg",
 
     ingredients: "1 orange, sliced; 1 cup sugar; ½ cup water; 1 (14 oz) can sweetened condensed milk; 3 cups plain yogurt; 1 ⅓ Tbsp unflavored gelatin powder; 1 Tbsp orange zest; ½ oz orange liqueur",
 
